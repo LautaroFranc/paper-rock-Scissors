@@ -8,7 +8,10 @@ const Socket = SocketServer.Server
 const server = createServer(app)
 const io=new Socket(server, {
   cors:{
-    origin:"*"
+    origin: "*",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["my-custom-header"],
+    credentials: true
   }
 })
 
