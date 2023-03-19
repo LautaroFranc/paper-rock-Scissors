@@ -1,3 +1,3 @@
 const server = require("./socket/server")
-const path= process.env|3001
-server.listen(path,()=>{})
+const port= process.env.PORT || 3001
+server.listen(port)
