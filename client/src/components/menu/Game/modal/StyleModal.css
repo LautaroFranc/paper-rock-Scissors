@@ -1,0 +1,90 @@
+#contener-options {
+  position: relative;
+}
+
+#item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-image: url("../../../../assets/msg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17vw;
+  height: 34vh;
+  position: relative;
+  left: 100px;
+  z-index: 10;
+  bottom: 50px;
+  cursor: pointer;
+  transform: rotate(10deg);
+  transition: all 0.2s ease-in-out;
+  font-size: 17px;
+  animation: items-option 0.4s 1 ease-in-out;
+}
+
+@media (max-width: 768px) {
+  #item {
+    left: 20px;
+    width: 300px;
+    height: 34vh;
+    bottom: 5px;
+  }
+}
+
+@keyframes items-option {
+  0% {
+    transform: rotate(-50deg);
+    width: 10vw;
+    height: 20vh;
+  }
+}
+
+#item:hover {
+  transform: scale(1.2);
+}
+#container-search,
+#container-create {
+  background-image: url("../../../../assets/Exclama.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0%;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: search 0.2s 1 ease-in-out;
+}
+
+@keyframes search {
+  0% {
+    left: 200px;
+    transform: scale(2);
+  }
+  50% {
+    left: -10px;
+    transform: scale(0.9);
+  }
+}
+
+#container-search input,
+#container-search button,
+#container-create input,
+#container-create button {
+  padding: 5px 10px;
+  position: relative;
+  animation: search-input 0.5s 1 ease-in-out;
+  border: 1px solid #ccc;
+  transition: all 1s;
+  border-radius: 0px;
+  box-shadow: 5px 5px 1px #000;
+}
+input:focus {
+  outline: none;
+}
+#container-search button:active,
+#container-create button:active {
+  box-shadow: 1px 0px 1px #000;
+}

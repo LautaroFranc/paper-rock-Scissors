@@ -1,0 +1,79 @@
+
+
+#container{
+  animation: var(--animation-) var(--time-) 1 ease-in;
+  display: none;
+}
+
+@keyframes start {
+  0%{
+    transform: scale(2);
+  }
+  10%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 100%;
+    transform: scale(0.9);
+  }
+ 
+}
+
+
+@keyframes end {
+  0%{
+    opacity: 100%;
+  }
+  10%{
+    opacity: 50%;
+    transform: scale(0.9);
+
+  }
+  50%{
+    opacity: 60%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+
+
+
+
+#container2{
+  animation: var(--animation2-) var(--time2-) 1 ease-in;
+  display: none;
+}
+
+@keyframes start2 {
+  0%{
+    transform: scale(2);
+  }
+  10%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 100%;
+    transform: scale(0.9);
+  }
+ 
+}
+
+
+@keyframes end2 {
+  0%{
+    opacity: 100%;
+  }
+  10%{
+    opacity: 50%;
+    transform: scale(0.9);
+
+  }
+  50%{
+    opacity: 60%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+

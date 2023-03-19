@@ -1,0 +1,149 @@
+#chat-icon{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-image: url("../../../../assets/msg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 10vw;
+  cursor: pointer;
+}
+
+
+
+#chat-icon p{
+  width: 90px;
+  white-space: nowrap;       /* evita el ajuste de línea */
+  overflow: hidden;          /* oculta el texto que excede el ancho del div */
+  text-overflow: ellipsis;   
+  -webkit-line-clamp: 3;     /* líneas de texto a mostrar */
+  -webkit-box-orient: vertical; /* orientación vertical de la caja */
+}
+
+#modalMessage{
+  overflow: hidden;
+  height: 93vh;
+  width: 100%;
+  animation: message  0.4s 1 both ;
+}
+
+@keyframes message {
+  0%{
+    width: 1px;
+    height: 1px;
+  }    
+  50%{
+    height: 100vh;
+    width: 110%;
+  }
+}
+
+
+#user-2-msg,
+#user-1-msg {
+  position: relative;
+  background-image: url("../../../../assets/mess.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10px 10px;
+  min-height: 280px;
+  max-width: 280px;
+  display: flex;
+}
+
+#user-1-msg {
+  background-image: url("../../../../assets/mess2.png");
+  background-position: 0px 10px;
+}
+
+
+
+#text-2-msg,
+#text-1-msg {
+  font-size: 20px;
+  margin: 60px 40px;
+  width: 400px;
+  height: 120px;
+  padding: 10px 4px;
+  overflow-y: auto;
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f1ee23 #dfe9eb;
+}
+
+*::-webkit-scrollbar {
+  width: 1px;
+  width: 1px;
+  height: 4px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #000000;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #62a34b;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #62a34b;
+}
+
+@media (max-width: 768px) {
+  #chat-icon {
+    width: 100%;
+    height: 15vh;
+  }
+#user-2-msg,
+#user-1-msg {
+  min-height: 250px;
+  max-width: 300px;
+  
+}
+
+#text-2-msg,
+#text-1-msg {
+  font-size: 20px;
+  margin: 60px 50px;
+  width: 300px;
+  height:120px;
+  padding: 20px 4px;
+  overflow-y: auto;
+}
+#modalMessage{
+  position: relative;
+  width: 95vw;
+  height: 93vh;
+ z-index: 10; 
+}
+
+@keyframes message {
+  0%{
+    width: 1px;
+    height: 1px;
+  }    
+  50%{
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+}

@@ -1,0 +1,50 @@
+#GameFinishing{
+  background-color: rgba(255, 255, 255, 0.425);
+  backdrop-filter: blur(5px);
+  height: 100vh;
+}
+
+#GameFinishing figure{ 
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#GameFinishing img{
+  width: 5%;
+}
+#win,#lose{
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#win{
+  background-image: url("../../../../assets/bg-p.png");
+  background-size: 90px;
+  text-shadow: -5px -10px #fff5e7,
+  -7px -7px 0 #000,
+  -2px -7px 0 #000
+  ;
+  animation: animate 1s 1 ease-in;
+}
+
+#lose{
+  background-image:  url("../../../../assets/bg-p.png");
+  background-repeat: repeat;
+  background-size: 90px;  
+  text-shadow: -5px -10px #ffffff,
+  -7px -7px 0 #000,
+  -2px -7px 0 #000
+  ;
+  animation: animate 1s 1 ease-in-out;
+
+  
+}
+
+@keyframes animate {
+  0%{
+  text-shadow: 10px 5px #000000, 5px 2px #ffffff;
+  }
+}
