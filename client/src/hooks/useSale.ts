@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import socketIOClient from "socket.io-client";
 import { sale,key } from "../interface/sale";
 const NEW_CHAT_MESSAGE_EVENT = "chat";
-const SOCKET_SERVER_URL = "https://paper-rock-scissors-7tao.vercel.app/";
+const SOCKET_SERVER_URL = "https://paper-rock-scissors-production.up.railway.app/";
 let socket = socketIOClient(SOCKET_SERVER_URL)
 
 const useMessages = (messageId:string|undefined) => {
