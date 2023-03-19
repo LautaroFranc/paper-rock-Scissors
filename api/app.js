@@ -16,8 +16,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res)=>{
-res.send("hi, welcome to my server!");
-})
+// app.get("/", (req, res)=>{
+// res.send("hi, welcome to my server!");
+// })
 
 module.exports = app
