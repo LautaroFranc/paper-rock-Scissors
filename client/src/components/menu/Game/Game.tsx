@@ -56,7 +56,7 @@ const Game = () => {
   }, [])
   useEffect(() => {
     if (sale.messages.error) {
-       setPlay(false);
+      setPlay(false);
       navigate("/Game");
 
     }
@@ -172,8 +172,14 @@ const Game = () => {
                         <p className="text-center">{item.name}</p>
                       </button>
                     )) :
-                    <span className="bg-white  lg:h-[100px] border-[5px] border-black text-center p-[10px] py-[30px] font-bold">
-                      Esperando a tu "amigo"... 🥲
+                    <span className="bg-white  lg:min-h-[100px] border-[5px] border-black text-center p-[10px] py-[30px] font-bold">
+                      <p className="cursor-pointer" onClick={() => {
+                        setRounds({ ...rounds, nextRound: true })
+                      }}>
+                        Waiting for your "friend"... 🥲
+                        <br />
+                        ← Back
+                      </p>
                     </span>
                   }
                   {rounds.win && <GameFinishing winResult={rounds.win} wined={wined} />}

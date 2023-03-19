@@ -19,7 +19,7 @@ const Home = () => {
           className="border shadow-lg shadow-slate-400  flex items-center text-center m-4"
           onClick={HandleClick}
         >
-          <p className=" text-[24px] px-[10px]  font-bold lg:text-4xl">PLAY</p>
+          <p className="text-[24px] px-[10px]  font-bold lg:text-4xl">PLAY</p>
         </button>
       </div>
     </div>

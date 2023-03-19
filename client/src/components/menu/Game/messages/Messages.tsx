@@ -70,7 +70,7 @@ const Messages = ({ id }: { id: string | undefined }) => {
   }
 
   return (
-    <div className="absolute bottom-0 left-0">
+    <div className="absolute bottom-0 left-0 z-10">
       {getMsg ? (
         <div
           id="modalMessage"
