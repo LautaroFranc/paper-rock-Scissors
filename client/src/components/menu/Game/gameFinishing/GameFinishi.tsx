@@ -15,7 +15,7 @@ const GameFinishing = ({ winResult }: prop) => {
     <div id="GameFinishing" className="flex justify-center  items-center flex-col absolute left-0 top-0 w-full  h-full">
       {winResult === "win"&&
         <>
-          <h1 id="win" className="font-bold text-center text-8xl">WIND</h1>
+          <h1 id="win" className="font-bold text-center text-8xl">WIN</h1>
           <figure>
             <img className="w-[100%]" src={trophy} />
           </figure>      
@@ -26,7 +26,7 @@ const GameFinishing = ({ winResult }: prop) => {
         </>
     }
        { winResult === "lose"&&
-        <h1 id="lose" className="font-bold text-center text-8xl">LOSE </h1>
+        <h1 id="lose" className="font-bold text-center text-8xl">LOSE</h1>
       }
       
       { winResult === "tie"&&
